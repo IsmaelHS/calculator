@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+}
+
+.container {
+  padding: 24px 8px 8px;
+  margin: auto;
+  width: 600px;
+  height: 800px;
+  background: rgb(203, 211, 237);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.display {
+  background-color: rgb(232, 240, 252);
+  flex: 2;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+.numPad {
+  flex: 3;
+  background: rgb(77, 90, 138);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.numPad > div {
+  padding: 8px;
+}
+
+.extras {
+  flex: 1;
+}
+
+.basics {
+  flex: 5;
+  display: flex;
+}
+
+.basics > div > button {
+  font-size: xx-large;
+  color: rgb(53, 65, 80);
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.basics > div > button:hover {
+  opacity: 0.85;
+}
+
+.digits {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits > button {
+  width: 107px;
+  height: 88px;
+}
+
+.classicOperators {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.classicOperators > button {
+  flex: auto;
+  background: rgb(212, 212, 249);
+  align-items: stretch;
+}
+
+.result-clear {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.result-clear > button {
+  flex: auto;
+}
